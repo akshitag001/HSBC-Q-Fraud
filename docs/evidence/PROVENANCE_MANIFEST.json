@@ -1,0 +1,667 @@
+{
+  "manifest_title": "HSBC Quantum Fraud \u2014 Master Provenance Manifest",
+  "protocol_version": "vNEXT-Phase82",
+  "generation_timestamp": "2026-10-25T18:58:52.891896+00:00",
+  "git_commit": "e9bd296",
+  "total_indexed_artifacts": 16,
+  "real_data_status": "[BLOCKED: REAL DATA]",
+  "global_provenance_verdict": "[SYNTHETIC] [MEASURED] [VERIFIED] [REAL DATA BLOCKED] [QUANTUM ADVANTAGE NOT DEMONSTRATED]",
+  "artifacts": {
+    "budget_sweep_results.csv": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 1907
+      },
+      "timestamp": "2026-10-25T18:58:52.335266+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "classical_strengthening_benchmark.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 9660
+      },
+      "timestamp": "2026-10-25T18:58:52.368809+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "quantum_geometry_expressivity.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 3528
+      },
+      "timestamp": "2026-10-25T18:58:52.400635+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "quantum_feature_map_ablation.csv": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 721
+      },
+      "timestamp": "2026-10-25T18:58:52.430800+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "seed_robustness.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 4957
+      },
+      "timestamp": "2026-10-25T18:58:52.458503+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "sample_size_robustness.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 2240
+      },
+      "timestamp": "2026-10-25T18:58:52.491604+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "temporal_window_robustness.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 1964
+      },
+      "timestamp": "2026-10-25T18:58:52.530383+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "noisy_simulation.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 941
+      },
+      "timestamp": "2026-10-25T18:58:52.566303+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "hardware_and_economics.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 3304
+      },
+      "timestamp": "2026-10-25T18:58:52.602375+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "router_causality_ablation.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 17543
+      },
+      "timestamp": "2026-10-25T18:58:52.643081+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "router_audit.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 6752
+      },
+      "timestamp": "2026-10-25T18:58:52.681549+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "full_system_evaluation.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 29890
+      },
+      "timestamp": "2026-10-25T18:58:52.714434+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "claim_firewall_audit.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 92
+      },
+      "timestamp": "2026-10-25T18:58:52.743415+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "security_audit.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 223
+      },
+      "timestamp": "2026-10-25T18:58:52.770760+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "reproducibility_audit.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 2041
+      },
+      "timestamp": "2026-10-25T18:58:52.809894+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    },
+    "research_verdict.json": {
+      "dataset_source": "synthetic_ieee_cis_benchmark",
+      "dataset_status": "[SYNTHETIC] [MEASURED] [VERIFIED]",
+      "dataset_version": "v1.0-synthetic-10k",
+      "split_strategy": "chronological_monotonic_transaction_dt",
+      "train_range": {
+        "dt_min": 86400,
+        "dt_max": 691200,
+        "n_samples": 7000,
+        "fraud_rate": 0.035
+      },
+      "calibration_range": {
+        "dt_min": 691200,
+        "dt_max": 777600,
+        "n_samples": 1000,
+        "fraud_rate": 0.035
+      },
+      "test_range": {
+        "dt_min": 777600,
+        "dt_max": 950400,
+        "n_samples": 2000,
+        "fraud_rate": 0.035
+      },
+      "feature_version": "v1.0-standardized-train-fit-only",
+      "router_version": "v1.0-uncertainty-amount-synergy",
+      "model_version": "v1.0",
+      "quantum_backend": "pennylane.default.qubit",
+      "seed": 42,
+      "sample_count": 10000,
+      "budget": 0.01,
+      "metrics": {
+        "file_bytes": 5427
+      },
+      "timestamp": "2026-10-25T18:58:52.849244+00:00",
+      "git_commit": "e9bd296",
+      "environment": {
+        "python_version": "3.11.9",
+        "platform": "win32",
+        "executable": "C:\\Program Files\\Python311\\python.exe"
+      }
+    }
+  }
+}

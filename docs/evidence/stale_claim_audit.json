@@ -1,0 +1,1288 @@
+{
+  "0.8845": [
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 20,
+      "text": "The forensic audit revealed that while the core architectural conclusions (**Outcome B \u2014 No Quantum Advantage over tuned classical controls**) and the underlying experiments are scientifically sound, ungrounded narrative artifacts (e.g., PR-AUC of `0.8845`, ROC-AUC of `0.9412`, `\u20ac1.2M+` savings, `13 seeds`, `5 windows`) were mistakenly cited in chat narrative summaries rather than originating from committed evidence."
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 36,
+      "text": "| **4** | **Baseline LightGBM PR-AUC** | 0.8845 | **0.3040** (0.303997) | `src/evaluation/system_evaluator.py` | `docs/evidence/evidence_ledger.json` | `d32ea250a87f4827...` | `[UNVERIFIED] -> DOWNGRADED & REVERTED to 0.3040` |"
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 149,
+      "text": "2. **Downgraded Claims:** Exaggerated narrative metrics (`PR-AUC 0.8845`, `ROC-AUC 0.9412`, `\u20ac1.2M+ savings`, `13 seeds`, `5 windows`) are formally downgraded, stripped of `[MEASURED]` status, and reverted to the exact committed evidence in the provenance manifest."
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 18,
+      "text": "1. `0.8845` (Unverified LightGBM PR-AUC)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 39,
+      "text": "| **`0.8845`** | 3 | **INVALID** | Appeared only in `RECONCILIATION_REPORT.md` documenting historical audit and downgrade. Zero source code or result artifacts contained this value. | **Purged from all scientific claims**. Documented strictly as historical reconciled artifact. True baseline stands at **0.3040**. |"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 58,
+      "text": "1. **Baseline Inconsistency:** Resolved. All claims that baseline LightGBM achieved 0.8845 are eliminated. The verified baseline PR-AUC is **0.3040** on the 10,000-row synthetic dataset with 31.25% fraud prevalence."
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 7,
+      "text": "'0.8845',"
+    }
+  ],
+  "0.9412": [
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 20,
+      "text": "The forensic audit revealed that while the core architectural conclusions (**Outcome B \u2014 No Quantum Advantage over tuned classical controls**) and the underlying experiments are scientifically sound, ungrounded narrative artifacts (e.g., PR-AUC of `0.8845`, ROC-AUC of `0.9412`, `\u20ac1.2M+` savings, `13 seeds`, `5 windows`) were mistakenly cited in chat narrative summaries rather than originating from committed evidence."
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 37,
+      "text": "| **5** | **Baseline LightGBM ROC-AUC** | 0.9412 | **0.4833** (raw) / **0.8540** (calib) | `src/models/classical/train_baseline.py` | `docs/evidence/competition_package/04_classical_baseline.md` | Pinned in Ledger | `[UNVERIFIED] -> DOWNGRADED & REVERTED to 0.4833/0.8540` |"
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 149,
+      "text": "2. **Downgraded Claims:** Exaggerated narrative metrics (`PR-AUC 0.8845`, `ROC-AUC 0.9412`, `\u20ac1.2M+ savings`, `13 seeds`, `5 windows`) are formally downgraded, stripped of `[MEASURED]` status, and reverted to the exact committed evidence in the provenance manifest."
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 19,
+      "text": "2. `0.9412` (Unverified LightGBM ROC-AUC)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 40,
+      "text": "| **`0.9412`** | 3 | **INVALID** | Appeared only in `RECONCILIATION_REPORT.md` documenting historical downgrade. Zero empirical basis. | **Purged from all scientific claims**. True baseline stands at **0.4833** (raw test) / **0.8540** (calibrated subsplit). |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 8,
+      "text": "'0.9412',"
+    }
+  ],
+  "0.641": [
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 42,
+      "text": "| **10** | **PQK Bootstrap $p$-value** | 0.641 | **0.610** (nom) / **1.000** (Bonf) | `src/evaluation/system_evaluator.py` | `data/results/full_system_evaluation.json` | `8f88370633b01736...` | `[SYNTHETIC] [MEASURED] [VERIFIED] (Reconciled: 0.641 was TxnAmt mean)` |"
+    },
+    {
+      "file": "docs\\evidence\\router_audit.json",
+      "line": 142,
+      "text": "\"escalated_mean\": 0.6413753830615241,"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 20,
+      "text": "3. `0.641` (Misattributed p-value)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 41,
+      "text": "| **`0.641`** | 4 | **VALID AS METRIC, INVALID AS P-VAL** | Found in `data/results/router_audit.json` (`escalated_mean: 0.641375` for normalized `TransactionAmt`) and `data/raw/train_transaction.csv` (synthetic transaction amounts). | **Reclassified**. Retained in raw results as normalized transaction amount mean; completely removed from any p-value claims (true p-value is **0.610** nominal / **1.000** Bonferroni). |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 9,
+      "text": "'0.641',"
+    }
+  ],
+  "13 seeds": [
+    {
+      "file": "docs\\evidence\\CANONICAL_RESULTS.md",
+      "line": 55,
+      "text": "| **`CLM-QNTM-03`** | Seed Robustness Count | `[SYNTHETIC] [MEASURED]` | Synthetic 10k Benchmark | [`seed_robustness.json`](docs/evidence/seed_robustness.json) | `src/evaluation/seed_robustness.py` | 5 Seeds | Mean $\\Delta(\\text{PQK} - \\text{RBF})$ | **+0.0002** | $\\text{Std} = 0.0004$ | Confirmed exactly 5 independent seeds evaluated; claims of 13 seeds rejected. |"
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 20,
+      "text": "The forensic audit revealed that while the core architectural conclusions (**Outcome B \u2014 No Quantum Advantage over tuned classical controls**) and the underlying experiments are scientifically sound, ungrounded narrative artifacts (e.g., PR-AUC of `0.8845`, ROC-AUC of `0.9412`, `\u20ac1.2M+` savings, `13 seeds`, `5 windows`) were mistakenly cited in chat narrative summaries rather than originating from committed evidence."
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 44,
+      "text": "| **12** | **Random Seeds Tested** | 13 seeds | **5 seeds** (42, 43, 44, 45, 46) | `src/evaluation/seed_robustness.py` | `docs/evidence/seed_robustness.json` | `56148a31c1761f2d...` | `[UNVERIFIED as 13] -> DOWNGRADED & REVERTED to 5 seeds` |"
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 149,
+      "text": "2. **Downgraded Claims:** Exaggerated narrative metrics (`PR-AUC 0.8845`, `ROC-AUC 0.9412`, `\u20ac1.2M+ savings`, `13 seeds`, `5 windows`) are formally downgraded, stripped of `[MEASURED]` status, and reverted to the exact committed evidence in the provenance manifest."
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 21,
+      "text": "4. `13 seeds` (Unexecuted seed count claim)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 42,
+      "text": "| **`13 seeds`** | 3 | **INVALID** | Cited in vNEXT narrative proposals as a target sweep; actual executed benchmark ran 5 seeds. | **Reverted to 5 seeds** (`seed_robustness.json`). All references updated. |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 10,
+      "text": "'13 seeds',"
+    }
+  ],
+  "5 temporal windows": [
+    {
+      "file": "docs\\evidence\\calibration_audit.json",
+      "line": 121,
+      "text": "\"calibration_stability_verdict\": \"Stable across 5 temporal windows; Brier score remains tightly bounded (0.19 to 0.22).\""
+    },
+    {
+      "file": "docs\\evidence\\CANONICAL_RESULTS.md",
+      "line": 56,
+      "text": "| **`CLM-QNTM-04`** | Temporal Window Count | `[SYNTHETIC] [MEASURED]` | Synthetic 10k Benchmark | [`temporal_window_robustness.json`](docs/evidence/temporal_window_robustness.json) | `src/evaluation/temporal_window_robustness.py` | 42 | Mean $\\Delta(\\text{PQK} - \\text{RBF})$ | **-0.0001** | $\\text{Std} = 0.0008$ | Confirmed exactly 5 temporal windows evaluated across chronological slices. |"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 22,
+      "text": "5. `5 temporal windows` (Unexecuted window count claim)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 43,
+      "text": "| **`5 temporal windows`**| 0 | **INVALID** | Cited in vNEXT proposal notes; actual temporal evaluation executed across 3 sliding windows. | **Reverted to 3 temporal windows** (`temporal_window_robustness.json`). |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 11,
+      "text": "'5 temporal windows',"
+    },
+    {
+      "file": "src\\evaluation\\threshold_and_calibration_audit.py",
+      "line": 189,
+      "text": "\"calibration_stability_verdict\": \"Stable across 5 temporal windows; Brier score remains tightly bounded (0.19 to 0.22).\""
+    }
+  ],
+  "14.8%": [
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 47,
+      "text": "| **15** | **Noise Degradation Ratio** | 14.8% drop | **25.88% purity drop** ($1.0 \\to 0.741$) | `src/evaluation/noisy_simulation.py` | `docs/evidence/noisy_simulation.json` | `e7e51e13c6011380...` | `[SYNTHETIC] [MEASURED] [VERIFIED] (Reconciled)` |"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 23,
+      "text": "6. `14.8%` (Uncalibrated noise degradation ratio)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 44,
+      "text": "| **`14.8%`** | 1 | **INVALID** | Appeared in historical narrative summaries as noise drop. | **Reconciled to actual measured values**: **25.88% purity drop** ($1.000 \\to 0.741$) and **3.0% AUPRC drop** ($0.4821 \\to 0.4678$) in `noisy_simulation.json`. |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 12,
+      "text": "'14.8%',"
+    }
+  ],
+  "\u20ac1.2M": [
+    {
+      "file": "docs\\evidence\\CANONICAL_RESULTS.md",
+      "line": 61,
+      "text": "| **`CLM-ECON-01`** | Realized Expenditure Savings | `[VERIFIED]` | Enterprise Operations | [`ECONOMIC_AUDIT.md`](docs/evidence/ECONOMIC_AUDIT.md) | `src/evaluation/hardware_and_economics.py` | N/A | Realized Fraud Savings | **$0.00** | Zero realized claims | Claims of \u20ac1.2M savings are rejected; unbacked marketing numbers prohibited. |"
+    },
+    {
+      "file": "docs\\evidence\\ECONOMIC_AUDIT.md",
+      "line": 26,
+      "text": "> **No realized monetary savings have been claimed or accrued ($0.00).** All financial figures represent mathematically modeled unit economics under explicit parameter assumptions. Claims of \"\u20ac1.2M savings\" are prohibited and rejected."
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 20,
+      "text": "The forensic audit revealed that while the core architectural conclusions (**Outcome B \u2014 No Quantum Advantage over tuned classical controls**) and the underlying experiments are scientifically sound, ungrounded narrative artifacts (e.g., PR-AUC of `0.8845`, ROC-AUC of `0.9412`, `\u20ac1.2M+` savings, `13 seeds`, `5 windows`) were mistakenly cited in chat narrative summaries rather than originating from committed evidence."
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 121,
+      "text": "- **Realized Savings Classification:** `[MODELED]` \u2014 Zero empirical savings have been realized. Any mention of `\u20ac1.2M+` in previous summaries was an uncalibrated illustrative scenario and has been removed from scientific claims."
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 149,
+      "text": "2. **Downgraded Claims:** Exaggerated narrative metrics (`PR-AUC 0.8845`, `ROC-AUC 0.9412`, `\u20ac1.2M+ savings`, `13 seeds`, `5 windows`) are formally downgraded, stripped of `[MEASURED]` status, and reverted to the exact committed evidence in the provenance manifest."
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 24,
+      "text": "7. `\u20ac1.2M` / `$1.2M` (Unverified realized financial savings)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 45,
+      "text": "| **`\u20ac1.2M` / `$1.2M`** | 3 | **INVALID AS REALIZED** | Appeared in narrative business summaries without production transaction grounding. | **Downgraded to [MODELED]**. Realized savings set to **$0.00**; QPU cost penalty documented at **>600,000x**. |"
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_CLAIM_MATRIX.md",
+      "line": 29,
+      "text": "| **CLM-14** | Unit Economics & Compute Costs | Modeled cloud rates (AWS Braket / IonQ Aria) | `[MODELED] [VERIFIED]` | `docs/evidence/hardware_and_economics.json` | Classical: $0.65 / 1M tx; QPU: $353,000.50 / 1M tx | \"Modeled QPU compute costs ($35.30 per escalated transaction, $353,000 / 10k tx) are >540,000x more expensive than classical compute ($0.65 / 1M tx).\" | \"Realized banking savings of \u20ac1.2M have been achieved\" |"
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_NUMBER_LOCK.md",
+      "line": 50,
+      "text": "| **NL-34** | `$0.00` | Realized expenditure savings | `ECONOMIC_AUDIT.md` | Research Benchmark | Operational Status | `[VERIFIED]` | \"$0.00 realized monetary savings to date\" | \"\u20ac1.2M realized banking savings\" |"
+    },
+    {
+      "file": "proposal\\PROPOSAL_CLAIM_MATRIX.md",
+      "line": 29,
+      "text": "| **CLM-14** | Unit Economics & Compute Costs | Modeled cloud rates (AWS Braket / IonQ Aria) | `[MODELED] [VERIFIED]` | `docs/evidence/hardware_and_economics.json` | Classical: $0.65 / 1M tx; QPU: $353,000.50 / 1M tx | \"Modeled QPU compute costs ($35.30 per escalated transaction, $353,000 / 10k tx) are >540,000x more expensive than classical compute ($0.65 / 1M tx).\" | \"Realized banking savings of \u20ac1.2M have been achieved\" |"
+    },
+    {
+      "file": "proposal\\PROPOSAL_NUMBER_LOCK.md",
+      "line": 50,
+      "text": "| **NL-34** | `$0.00` | Realized expenditure savings | `ECONOMIC_AUDIT.md` | Research Benchmark | Operational Status | `[VERIFIED]` | \"$0.00 realized monetary savings to date\" | \"\u20ac1.2M realized banking savings\" |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 13,
+      "text": "'\u20ac1.2M',"
+    }
+  ],
+  "$1.2M": [
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 24,
+      "text": "7. `\u20ac1.2M` / `$1.2M` (Unverified realized financial savings)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 45,
+      "text": "| **`\u20ac1.2M` / `$1.2M`** | 3 | **INVALID AS REALIZED** | Appeared in narrative business summaries without production transaction grounding. | **Downgraded to [MODELED]**. Realized savings set to **$0.00**; QPU cost penalty documented at **>600,000x**. |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 14,
+      "text": "'$1.2M',"
+    }
+  ],
+  "0.40": [
+    {
+      "file": "README.md",
+      "line": 26,
+      "text": "* **Quantum Advantage Was Not Demonstrated:** On matched real escalated transactions, Projected Quantum Kernel (PR-AUC = 0.5540) versus Tuned Classical RBF (PR-AUC = 0.6561) yielded $\\Delta\\text{PR-AUC} = -0.1021$ with a **95% bootstrap confidence interval of $[-0.0383, +0.1821]$** and $p = 0.246$ (Bonferroni $p = 0.492$). Because the confidence interval spans zero and $p > 0.05$, the null hypothesis cannot be rejected."
+    },
+    {
+      "file": "README.md",
+      "line": 44,
+      "text": "| **LightGBM Baseline** | Real (IEEE-CIS) | PR-AUC | **0.4040** (Lift: **11.74x** over $\\pi=0.0344$) | `[MEASURED]` | [`real_classical_baseline.json`](docs/evidence/real_classical_baseline.json) |"
+    },
+    {
+      "file": "README.md",
+      "line": 51,
+      "text": "| **Quantum Projected (PQK)** | Real (IEEE-CIS) | PR-AUC (Matched $N=200$) | **0.5540** (ROC-AUC: **0.6753**) | `[MEASURED]` | [`real_quantum_matched_experiment.json`](docs/evidence/real_quantum_matched_experiment.json) |"
+    },
+    {
+      "file": "docs\\evidence\\calibration_audit.json",
+      "line": 30,
+      "text": "\"bin_range\": \"[0.30, 0.40]\","
+    },
+    {
+      "file": "docs\\evidence\\calibration_audit.json",
+      "line": 37,
+      "text": "\"bin_range\": \"[0.40, 0.50]\","
+    },
+    {
+      "file": "docs\\evidence\\CALIBRATION_AUDIT.md",
+      "line": 30,
+      "text": "| **$[0.30, 0.40)$** | 936 | 34.27% | 32.37% | **0.0190** |"
+    },
+    {
+      "file": "docs\\evidence\\CALIBRATION_AUDIT.md",
+      "line": 31,
+      "text": "| **$[0.40, 0.50)$** | 128 | 43.04% | 43.75% | **0.0071** |"
+    },
+    {
+      "file": "docs\\evidence\\CANONICAL_RESULTS.md",
+      "line": 18,
+      "text": "| **LightGBM Baseline** | Real (IEEE-CIS) | PR-AUC | **0.4040** (Lift: **11.74x** over $\\pi=0.0344$) | `[MEASURED]` | [`real_classical_baseline.json`](docs/evidence/real_classical_baseline.json) |"
+    },
+    {
+      "file": "docs\\evidence\\CANONICAL_RESULTS.md",
+      "line": 27,
+      "text": "| **Quantum Projected (PQK)** | Real (IEEE-CIS) | PR-AUC (Matched $N=200$) | **0.5540** (ROC-AUC: **0.6753**) | `[MEASURED]` | [`real_quantum_matched_experiment.json`](docs/evidence/real_quantum_matched_experiment.json) |"
+    },
+    {
+      "file": "docs\\evidence\\CANONICAL_RESULTS.md",
+      "line": 47,
+      "text": "| **`CLM-REAL-05`** | Real Classical Baseline PR-AUC | `[REAL DATA] [MEASURED]` | Official IEEE-CIS | [`real_classical_baseline.json`](docs/evidence/real_classical_baseline.json) | `src/evaluation/run_real_scientific_suite.py` | 42 | PR-AUC | **0.4040** | Lift: **11.74x** over $\\pi=0.0344$ | ROC-AUC: **0.8503**, Brier: **0.0250**, Latency: **$0.7\\text{ }\\mu\\text{s/tx}$**. |"
+    },
+    {
+      "file": "docs\\evidence\\CLASS_IMBALANCE_AUDIT.md",
+      "line": 20,
+      "text": "| **Calibrated LightGBM PR-AUC** | **0.4040** | Empirical out-of-sample PR-AUC | `[MEASURED]` |"
+    },
+    {
+      "file": "docs\\evidence\\CLASS_IMBALANCE_AUDIT.md",
+      "line": 32,
+      "text": "Measures the area under the continuous precision-recall curve across all possible decision thresholds $[0, 1]$. In highly imbalanced contexts ($\\pi = 3.44\\%$), an uninformative model scores $0.0344$. A score of $0.4040$ represents an **$11.74\\times$ lift**, confirming high ranking power."
+    },
+    {
+      "file": "docs\\evidence\\CLASS_IMBALANCE_AUDIT.md",
+      "line": 47,
+      "text": "| **Calibrated LightGBM PR-AUC** | 0.3987 | **0.4040** | Nominal scores are similar, but relative lift differs |"
+    },
+    {
+      "file": "docs\\evidence\\COMPETITION_STORY.md",
+      "line": 25,
+      "text": "1. **Frontline Fast Path:** Calibrated LightGBM screens 100% of traffic at $0.7\\text{ }\\mu\\text{s/tx}$ inference speed, scoring an out-of-sample PR-AUC of **0.4040** (**11.74x lift** over base prevalence)."
+    },
+    {
+      "file": "docs\\evidence\\COMPETITION_STORY.md",
+      "line": 58,
+      "text": "* Projected Quantum Kernel (PQK): PR-AUC = **0.5540** (ROC-AUC = 0.6753)"
+    },
+    {
+      "file": "docs\\evidence\\DECISION_THRESHOLD_AUDIT.md",
+      "line": 31,
+      "text": "| **0.40** | 236 | 11.8% | 18.9% | 49.6% | 91.4% | 0.274 | 31.5 hrs | $92,145 |"
+    },
+    {
+      "file": "docs\\evidence\\FINAL_CLAIM_GATE.md",
+      "line": 17,
+      "text": "*\"Frontline calibrated LightGBM achieves an empirical PR-AUC of $0.4040$ ($11.74\\times$ lift over random guessing), an ROC-AUC of $0.8503$, and a Brier score loss of $0.0250$ on out-of-sample real transactions.\"*"
+    },
+    {
+      "file": "docs\\evidence\\FINAL_READINESS_REPORT.md",
+      "line": 51,
+      "text": "* **PR-AUC:** **0.4040** (**11.74x lift** over random guessing $\\pi = 0.0344$)."
+    },
+    {
+      "file": "docs\\evidence\\FINAL_READINESS_REPORT.md",
+      "line": 83,
+      "text": "* **Projected Quantum Kernel (PQK):** PR-AUC = **0.5540**, ROC-AUC = **0.6753**, Brier = **0.3017**"
+    },
+    {
+      "file": "docs\\evidence\\FINAL_READINESS_REPORT.md",
+      "line": 181,
+      "text": "| Frontline LightGBM scores 0.4040 PR-AUC (11.74x lift) at 0.0007 ms/tx | `[MEASURED]` | `real_classical_baseline.json` |"
+    },
+    {
+      "file": "docs\\evidence\\METRIC_ANOMALY_AUDIT.md",
+      "line": 32,
+      "text": "- `TransactionAmt`: Mean $\\approx 50.40$, Min $= 0.012$, Max $= 412.76$."
+    },
+    {
+      "file": "docs\\evidence\\real_calibration_audit.json",
+      "line": 40,
+      "text": "\"recall\": 0.4028051181102362"
+    },
+    {
+      "file": "docs\\evidence\\real_classical_baseline.json",
+      "line": 8,
+      "text": "\"pr_auc\": 0.40404969378204353,"
+    },
+    {
+      "file": "docs\\evidence\\REAL_CLASSICAL_BASELINE.md",
+      "line": 16,
+      "text": "| **Calibrated LightGBM (Isotonic)** | **0.4040** | **11.74x** | **0.8503** | **0.0250** | **0.0007 ms** ($0.7\\text{ }\\mu\\text{s}$) | ~354 KB | 42 | `[MEASURED]` |"
+    },
+    {
+      "file": "docs\\evidence\\REAL_CLASSICAL_BASELINE.md",
+      "line": 25,
+      "text": "Calibrated LightGBM achieves an empirical PR-AUC of **0.4040**, representing an **11.74x relative lift** above random guessing ($\\pi = 0.0344$)."
+    },
+    {
+      "file": "docs\\evidence\\real_class_imbalance_audit.json",
+      "line": 7,
+      "text": "\"audit_warning\": \"CRITICAL: Synthetic AUPRC (~0.30-0.40) and Real-Data AUPRC cannot be compared directly. Real baseline prevalence is 3.50%, meaning an AUPRC of 0.35 on real data represents a 10.0x lift over prevalence.\""
+    },
+    {
+      "file": "docs\\evidence\\real_data_temporal_split.md",
+      "line": 31,
+      "text": "* **Random IID Test AUPRC:** $0.4078$"
+    },
+    {
+      "file": "docs\\evidence\\real_quantum_matched_experiment.json",
+      "line": 27,
+      "text": "\"pr_auc\": 0.5540321512615,"
+    },
+    {
+      "file": "docs\\evidence\\REAL_QUANTUM_MATCHED_EXPERIMENT.md",
+      "line": 21,
+      "text": "| **Projected Quantum Kernel (PQK)** | 1-Qubit Pauli Expectations + RBF | **0.5540** | **0.6753** | **0.3017** | **22.1 ms (Sim)** | $O(N)$ state projections | `[MEASURED]` |"
+    },
+    {
+      "file": "docs\\evidence\\REAL_QUANTUM_MATCHED_EXPERIMENT.md",
+      "line": 28,
+      "text": "Projected Quantum Kernel achieved a nominal PR-AUC of 0.5540 vs 0.6561 for Classical RBF ($\\Delta = +0.0676$)."
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 50,
+      "text": "| **18** | **Router Uncertainty Interval** | $0.40 \\le p \\le 0.60$ | **Budget Percentile Router** ($B=10\\%$) | `src/models/router/escalation_router.py` | `data/results/router_audit.json` | `3aeb09c8cdd36711...` | `[IMPLEMENTED] [VERIFIED]` |"
+    },
+    {
+      "file": "docs\\evidence\\RESEARCH_VERDICT.md",
+      "line": 44,
+      "text": "* **Evidence:** Frontline calibrated LightGBM ($4.07\\text{ ms}$, PR-AUC 0.4040) paired with an uncertainty router and a tuned Classical RBF expert ($4.89\\text{ ms}$) provides a deployable, SLA-compliant system delivering over $10\\times$ fraud concentration for less than $0.65 per million transactions."
+    },
+    {
+      "file": "docs\\evidence\\router_audit.json",
+      "line": 41,
+      "text": "\"fraud_rate\": 0.40772532188841204,"
+    },
+    {
+      "file": "docs\\evidence\\router_causality_ablation.json",
+      "line": 479,
+      "text": "\"system_precision\": 0.40384615384615385,"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 25,
+      "text": "8. `0.40` / `0.60` (Router uncertainty bounds check)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 46,
+      "text": "| **`0.40` / `0.60`** | 24 | **VALID** | Legitimate raw floating point values in `data/raw/train_transaction.csv` ($Amt) and threshold bounds for $B=10\\%$ uncertainty escalation in router audit. | **Retained as valid**. Retained as floating-point feature values and router margin bounds. |"
+    },
+    {
+      "file": "docs\\evidence\\temporal_robustness.json",
+      "line": 14,
+      "text": "\"test_auprc\": 0.40783118775659777,"
+    },
+    {
+      "file": "docs\\evidence\\temporal_robustness.json",
+      "line": 15,
+      "text": "\"system_quantum_auprc\": 0.4083570952590215,"
+    },
+    {
+      "file": "docs\\evidence\\temporal_robustness.json",
+      "line": 16,
+      "text": "\"system_rbf_auprc\": 0.4066811627050982,"
+    },
+    {
+      "file": "docs\\evidence\\competition_package\\04_classical_baseline.md",
+      "line": 17,
+      "text": "- **PR-AUC:** **0.4040** (**11.74x lift** over random guessing $\\pi = 0.0344$)."
+    },
+    {
+      "file": "docs\\proposal\\FINAL_PROPOSAL_READINESS_REPORT.md",
+      "line": 92,
+      "text": "- **Classical LightGBM PR-AUC:** 0.4040 ($11.74\\times$ lift over $\\pi = 0.0344$)"
+    },
+    {
+      "file": "docs\\proposal\\FINAL_PROPOSAL_READINESS_REPORT.md",
+      "line": 98,
+      "text": "- **Quantum Models PR-AUCs:** Quantum Fidelity Kernel 0.3789, Quantum Projected Kernel (PQK) 0.5540"
+    },
+    {
+      "file": "docs\\proposal\\FINAL_PROPOSAL_READINESS_REPORT.md",
+      "line": 149,
+      "text": "> *\"Digital payment fraud is a severe class-imbalance decision problem operating under strict sub-50 ms operational budgets. Frontline calibrated classical ML efficiently processes the 99.5% majority at 4.07 ms latency. Posterior uncertainty routing concentrates fraud risk in a tiny 0.5% escalation population with 12.4\u00d7 enrichment. Quantum kernel methods offer a testable specialist hypothesis for complex boundary separations. In matched real-data experiments ($N=200$), the quantum projected kernel achieved PR-AUC 0.5540 vs 0.6561 for classical RBF ($\\Delta = -0.1021$), but paired bootstrap hypothesis testing yields $p = 0.246$ and a 95% CI spanning $[-0.0383, +0.1821]$, failing to reject the null hypothesis. Therefore, quantum advantage is NOT demonstrated on current representations, and physical QPU deployment is NOT currently justified. However, the selective classical architecture wins decisively today, delivering 11.7\u00d7 precision-recall lift and $0.65 / 1M transaction economics, while establishing a scientifically rigorous, falsifiable adoption gate that prevents unjustified capital expenditure on quantum hardware.\"*"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 282,
+      "text": "Frontline gradient boosted decision trees (LightGBM) achieve strong baseline discrimination (PR-AUC 0.4040, ROC-AUC 0.8503) and sub-5 ms execution across routine transactions. However, transactions close to the classification boundary exhibit epistemic uncertainty: instances where the frontline scorer lacks decisive confidence. Instead of attempting to replace the fast classical detector with a slow, costly quantum system, the rational architecture isolates this small, ambiguous subset for targeted secondary evaluation. This keeps 99% of transactions on an autonomous fast path while focusing specialist computation strictly where decision ambiguity is highest."
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 377,
+      "text": "<text x=\"12\" y=\"74\" class=\"metric-text\">PR-AUC: 0.4040 (11.7x lift)</text>"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 425,
+      "text": "<text x=\"10\" y=\"34\" class=\"body-text\">Projected Kernel (0.5540) | Fidelity (0.3789)</text>"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 619,
+      "text": "<td><strong>0.4040</strong> (11.7x lift)</td>"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 689,
+      "text": "<td><strong>0.5540</strong></td>"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 709,
+      "text": "In the matched N=200 escalated experiment, Projected Quantum Kernel achieved a nominal PR-AUC of 0.5540 versus 0.6561 for the Classical RBF baseline (&Delta;PR-AUC = -0.1021). To establish whether this point estimate represents genuine advantage or finite-sample variance, we conducted a <strong>1,000-resample paired bootstrap hypothesis test</strong>. The resulting 95% confidence interval spans zero: <strong>[&minus;0.0383, +0.1821]</strong>, with a two-tailed p-value of <strong>p = 0.246</strong> (Bonferroni-adjusted p = 0.492). Because the confidence interval includes negative values and p &gt; 0.05, <strong>the null hypothesis of no quantum advantage cannot be rejected</strong>."
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.md",
+      "line": 24,
+      "text": "Frontline gradient boosted decision trees (LightGBM) achieve strong baseline discrimination (PR-AUC 0.4040, ROC-AUC 0.8503) and sub-5 ms execution across routine transactions. However, transactions close to the classification boundary exhibit epistemic uncertainty: instances where the frontline scorer lacks decisive confidence. Instead of attempting to replace the fast classical detector with a slow, costly quantum system, the rational architecture isolates this small, ambiguous subset for targeted secondary evaluation. This keeps 99% of transactions on an autonomous fast path while focusing specialist computation strictly where decision ambiguity is highest."
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.md",
+      "line": 76,
+      "text": "- **Frontline LightGBM:** PR-AUC = 0.4040 (11.74x lift over test prevalence 0.0344), ROC-AUC = 0.8503, Brier = 0.0250. Latency: 4.07 ms median / 4.97 ms p95. Cost: $0.50 / 1M tx."
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.md",
+      "line": 80,
+      "text": "- **Quantum Kernels (N=200):** Fidelity Kernel = 0.3789; Projected Quantum Kernel (PQK) = 0.5540."
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 86,
+      "text": "This proposal establishes an empirically validated, asymmetric hybrid architecture for digital payment fraud detection. High-throughput retail payment environments process thousands of transactions per second under rigid operational latency constraints ($<50$~ms budget), where 99.5\\% of transactions are benign and fraud prevalence is below 3.5\\%. Indiscriminately executing quantum circuits across high-volume streams is operationally prohibitive ($180$--$1,200$~s cloud QPU queues; $\\$353,000 / 1\\text{M}$ tx modeled cost). Our architecture decouples online payment authorization from specialist evaluation: a fast, calibrated frontline LightGBM model processes 99.5\\% of transactions at \\textbf{4.07~ms median latency}, yielding a PR-AUC of \\textbf{0.4040} ($11.74\\times$ lift over the 3.499\\% prevalence base rate on the IEEE-CIS benchmark). A model posterior uncertainty router isolates the 0.5\\% boundary transactions, achieving a \\textbf{42.81\\% fraud density} ($12.44\\times$ concentration; $28.1\\times$ more fraud than transaction amount alone). On this matched boundary population ($N=200$), we conducted rigorous paired experiments comparing classical baselines against Quantum State Fidelity and Projected Quantum Kernels (PQK). PQK achieved a point-estimate PR-AUC of \\textbf{0.5540} vs \\textbf{0.6561} for classical RBF ($\\Delta = -0.1021$), but paired bootstrap hypothesis testing yields $p = 0.246$ (95\\% CI: $[-0.0383, +0.1821]$), failing to reject the null hypothesis. We transparently report this as \\textbf{Outcome B: No Quantum Advantage Demonstrated}. The primary enterprise deliverable is therefore a verified selective classical architecture operating at \\textbf{\\$0.65 / 1M transactions} that prevents multi-hundred-thousand-dollar cloud QPU misallocation while defining a falsifiable empirical gate for future quantum hardware adoption."
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 137,
+      "text": "node distance=0.40cm,"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 161,
+      "text": "\\scriptsize PR-AUC: 0.4040 $\\cdot$ 3.29 ms"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 217,
+      "text": "The frontline model is an optimized LightGBM classifier comprising 150 gradient-boosted trees trained with focal loss weighting to address the 1:28 class imbalance. Raw tree outputs are uncalibrated; we apply isotonic regression on the independent calibration partition. The calibrated model achieves an Expected Calibration Error (ECE) of \\textbf{0.0785} and a Brier score of \\textbf{0.0250}, ensuring that output score $p$ reflects true empirical posterior probability $P(Y=1 \\mid X)$. On the unseen test partition, this frontline detector achieves a PR-AUC of \\textbf{0.4040} ($11.74\\times$ lift over the test base prevalence of $\\pi = 0.0344$) and an ROC-AUC of \\textbf{0.8503}."
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 295,
+      "text": "\\textbf{Frontline Detector} & LightGBM (150 trees, focal loss) & PR-AUC (Test Partition) & \\textbf{0.4040} & \\texttt{[REAL DATA][MEASURED]} \\\\"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 310,
+      "text": "& \\textbf{Projected Quantum Kernel (PQK)} & \\textbf{PR-AUC (Matched $N=200$)} & \\textbf{0.5540} (ROC: 0.6753) & \\texttt{[REAL DATA][MEASURED]} \\\\"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 332,
+      "text": "In the matched experiment ($N=200$ escalated transactions), the Projected Quantum Kernel (PQK) achieved a point-estimate PR-AUC of \\textbf{0.5540}, outperforming the tuned classical RBF baseline (\\textbf{0.6561}) by $\\Delta = -0.1021$. However, rigorous paired bootstrap hypothesis testing (2,000 resamples) demonstrates that:"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Supplementary_Appendix.tex",
+      "line": 271,
+      "text": "$[0.30, 0.40)$ & 284 & 0.3472 & 0.3521 & \\textbf{0.0049} \\\\"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Supplementary_Appendix.tex",
+      "line": 272,
+      "text": "$[0.40, 0.50)$ & 186 & 0.4481 & 0.4355 & \\textbf{0.0126} \\\\"
+    },
+    {
+      "file": "docs\\proposal\\JUDGE_OBJECTIONS.md",
+      "line": 21,
+      "text": "2. **Sample Variance & Statistical Insignificance:** While PQK achieved a nominal PR-AUC of 0.5540 vs 0.6561 for Classical RBF ($\\Delta = -0.1021$), a 1,000-resample paired bootstrap test revealed a 95% confidence interval of $[-0.0383, +0.1821]$ with $p = 0.246$ (Bonferroni $p = 0.492$). The confidence interval encompasses zero, confirming that the observed delta is indistinguishable from sampling noise."
+    },
+    {
+      "file": "docs\\proposal\\JUDGE_OBJECTIONS.md",
+      "line": 61,
+      "text": "**Defense:** Our temporal audit evaluated forward out-of-sample slices spanning 42 days beyond the training horizon. LightGBM retained a strong ROC-AUC of 0.8503 and PR-AUC of 0.4040, but performance showed natural temporal decay from day 141 to day 183. Our Phase 2 architecture incorporates continuous calibration monitoring (tracking Expected Calibration Error and Brier score over rolling 7-day windows) and dynamic uncertainty threshold recalibration to trigger automated retraining when feature drift exceeds distribution bounds."
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_CLAIM_MATRIX.md",
+      "line": 19,
+      "text": "| **CLM-04** | Frontline Classical Baseline | Calibrated LightGBM GBDT | `[REAL DATA] [MEASURED]` | `docs/evidence/real_classical_baseline.json` | PR-AUC = 0.4040, ROC-AUC = 0.8503 | \"Frontline calibrated LightGBM achieves a PR-AUC of 0.4040, delivering an 11.74x lift over out-of-sample test prevalence (0.0344).\" | \"Baseline is weak\" or \"LightGBM perfectly eliminates fraud\" |"
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_CLAIM_MATRIX.md",
+      "line": 23,
+      "text": "| **CLM-08** | Matched Quantum vs Classical Experiment | Identical $N=200$ support, identical 2D features | `[REAL DATA] [MEASURED]` | `docs/evidence/real_quantum_matched_experiment.json` | PQK: 0.5540 vs RBF: 0.6561, MLP: 0.3516, GBM: 0.3529 | \"In a strictly matched N=200 escalated experiment, PQK achieved a nominal PR-AUC of 0.5540 versus 0.6561 for a tuned Classical RBF baseline.\" | \"PQK demonstrated empirical quantum dominance or decisive superiority\" |"
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_NUMBER_LOCK.md",
+      "line": 25,
+      "text": "| **NL-09** | `0.4040` | Frontline LightGBM PR-AUC | `real_classical_baseline.json` | IEEE-CIS Fraud Benchmark | Test (118,108 tx) | `[REAL DATA] [MEASURED]` | \"PR-AUC of 0.4040 (11.74x lift over test prevalence)\" | \"World-leading 0.4040 accuracy\" |"
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_NUMBER_LOCK.md",
+      "line": 39,
+      "text": "| **NL-23** | `0.5540` | Projected Quantum Kernel PR-AUC | `real_quantum_matched_experiment.json` | IEEE-CIS Escalated Support | Matched N=200 | `[REAL DATA] [MEASURED]` | \"nominal PR-AUC of 0.5540 for Projected Quantum Kernel\" | \"Unqualified claims of quantum victory or superiority\" |"
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_RED_TEAM.md",
+      "line": 44,
+      "text": "- Primary metric is Precision-Recall AUC (PR-AUC = 0.4040, an 11.74x lift over test prevalence $\\pi = 0.0344$), avoiding ROC-AUC illusions."
+    },
+    {
+      "file": "proposal\\FINAL_PROPOSAL_READINESS_REPORT.md",
+      "line": 92,
+      "text": "- **Classical LightGBM PR-AUC:** 0.4040 ($11.74\\times$ lift over $\\pi = 0.0344$)"
+    },
+    {
+      "file": "proposal\\FINAL_PROPOSAL_READINESS_REPORT.md",
+      "line": 98,
+      "text": "- **Quantum Models PR-AUCs:** Quantum Fidelity Kernel 0.3789, Quantum Projected Kernel (PQK) 0.5540"
+    },
+    {
+      "file": "proposal\\FINAL_PROPOSAL_READINESS_REPORT.md",
+      "line": 149,
+      "text": "> *\"Digital payment fraud is a severe class-imbalance decision problem operating under strict sub-50 ms operational budgets. Frontline calibrated classical ML efficiently processes the 99.5% majority at 4.07 ms latency. Posterior uncertainty routing concentrates fraud risk in a tiny 0.5% escalation population with 12.4\u00d7 enrichment. Quantum kernel methods offer a testable specialist hypothesis for complex boundary separations. In matched real-data experiments ($N=200$), the quantum projected kernel achieved PR-AUC 0.5540 vs 0.6561 for classical RBF ($\\Delta = -0.1021$), but paired bootstrap hypothesis testing yields $p = 0.246$ and a 95% CI spanning $[-0.0383, +0.1821]$, failing to reject the null hypothesis. Therefore, quantum advantage is NOT demonstrated on current representations, and physical QPU deployment is NOT currently justified. However, the selective classical architecture wins decisively today, delivering 11.7\u00d7 precision-recall lift and $0.65 / 1M transaction economics, while establishing a scientifically rigorous, falsifiable adoption gate that prevents unjustified capital expenditure on quantum hardware.\"*"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 282,
+      "text": "Frontline gradient boosted decision trees (LightGBM) achieve strong baseline discrimination (PR-AUC 0.4040, ROC-AUC 0.8503) and sub-5 ms execution across routine transactions. However, transactions close to the classification boundary exhibit epistemic uncertainty: instances where the frontline scorer lacks decisive confidence. Instead of attempting to replace the fast classical detector with a slow, costly quantum system, the rational architecture isolates this small, ambiguous subset for targeted secondary evaluation. This keeps 99% of transactions on an autonomous fast path while focusing specialist computation strictly where decision ambiguity is highest."
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 377,
+      "text": "<text x=\"12\" y=\"74\" class=\"metric-text\">PR-AUC: 0.4040 (11.7x lift)</text>"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 425,
+      "text": "<text x=\"10\" y=\"34\" class=\"body-text\">Projected Kernel (0.5540) | Fidelity (0.3789)</text>"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 619,
+      "text": "<td><strong>0.4040</strong> (11.7x lift)</td>"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 689,
+      "text": "<td><strong>0.5540</strong></td>"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.html",
+      "line": 709,
+      "text": "In the matched N=200 escalated experiment, Projected Quantum Kernel achieved a nominal PR-AUC of 0.5540 versus 0.6561 for the Classical RBF baseline (&Delta;PR-AUC = -0.1021). To establish whether this point estimate represents genuine advantage or finite-sample variance, we conducted a <strong>1,000-resample paired bootstrap hypothesis test</strong>. The resulting 95% confidence interval spans zero: <strong>[&minus;0.0383, +0.1821]</strong>, with a two-tailed p-value of <strong>p = 0.246</strong> (Bonferroni-adjusted p = 0.492). Because the confidence interval includes negative values and p &gt; 0.05, <strong>the null hypothesis of no quantum advantage cannot be rejected</strong>."
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.log",
+      "line": 987,
+      "text": "[]|\\OT1/ptm/b/n/7 0.5540 \\OT1/ptm/m/n/7 (ROC:"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.md",
+      "line": 24,
+      "text": "Frontline gradient boosted decision trees (LightGBM) achieve strong baseline discrimination (PR-AUC 0.4040, ROC-AUC 0.8503) and sub-5 ms execution across routine transactions. However, transactions close to the classification boundary exhibit epistemic uncertainty: instances where the frontline scorer lacks decisive confidence. Instead of attempting to replace the fast classical detector with a slow, costly quantum system, the rational architecture isolates this small, ambiguous subset for targeted secondary evaluation. This keeps 99% of transactions on an autonomous fast path while focusing specialist computation strictly where decision ambiguity is highest."
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.md",
+      "line": 76,
+      "text": "- **Frontline LightGBM:** PR-AUC = 0.4040 (11.74x lift over test prevalence 0.0344), ROC-AUC = 0.8503, Brier = 0.0250. Latency: 4.07 ms median / 4.97 ms p95. Cost: $0.50 / 1M tx."
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.md",
+      "line": 80,
+      "text": "- **Quantum Kernels (N=200):** Fidelity Kernel = 0.3789; Projected Quantum Kernel (PQK) = 0.5540."
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 86,
+      "text": "This proposal establishes an empirically validated, asymmetric hybrid architecture for digital payment fraud detection. High-throughput retail payment environments process thousands of transactions per second under rigid operational latency constraints ($<50$~ms budget), where 99.5\\% of transactions are benign and fraud prevalence is below 3.5\\%. Indiscriminately executing quantum circuits across high-volume streams is operationally prohibitive ($180$--$1,200$~s cloud QPU queues; $\\$353,000 / 1\\text{M}$ tx modeled cost). Our architecture decouples online payment authorization from specialist evaluation: a fast, calibrated frontline LightGBM model processes 99.5\\% of transactions at \\textbf{4.07~ms median latency}, yielding a PR-AUC of \\textbf{0.4040} ($11.74\\times$ lift over the 3.499\\% prevalence base rate on the IEEE-CIS benchmark). A model posterior uncertainty router isolates the 0.5\\% boundary transactions, achieving a \\textbf{42.81\\% fraud density} ($12.44\\times$ concentration; $28.1\\times$ more fraud than transaction amount alone). On this matched boundary population ($N=200$), we conducted rigorous paired experiments comparing classical baselines against Quantum State Fidelity and Projected Quantum Kernels (PQK). PQK achieved a point-estimate PR-AUC of \\textbf{0.5540} vs \\textbf{0.6561} for classical RBF ($\\Delta = -0.1021$), but paired bootstrap hypothesis testing yields $p = 0.246$ (95\\% CI: $[-0.0383, +0.1821]$), failing to reject the null hypothesis. We transparently report this as \\textbf{Outcome B: No Quantum Advantage Demonstrated}. The primary enterprise deliverable is therefore a verified selective classical architecture operating at \\textbf{\\$0.65 / 1M transactions} that prevents multi-hundred-thousand-dollar cloud QPU misallocation while defining a falsifiable empirical gate for future quantum hardware adoption."
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 137,
+      "text": "node distance=0.40cm,"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 161,
+      "text": "\\scriptsize PR-AUC: 0.4040 $\\cdot$ 3.29 ms"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 217,
+      "text": "The frontline model is an optimized LightGBM classifier comprising 150 gradient-boosted trees trained with focal loss weighting to address the 1:28 class imbalance. Raw tree outputs are uncalibrated; we apply isotonic regression on the independent calibration partition. The calibrated model achieves an Expected Calibration Error (ECE) of \\textbf{0.0785} and a Brier score of \\textbf{0.0250}, ensuring that output score $p$ reflects true empirical posterior probability $P(Y=1 \\mid X)$. On the unseen test partition, this frontline detector achieves a PR-AUC of \\textbf{0.4040} ($11.74\\times$ lift over the test base prevalence of $\\pi = 0.0344$) and an ROC-AUC of \\textbf{0.8503}."
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 295,
+      "text": "\\textbf{Frontline Detector} & LightGBM (150 trees, focal loss) & PR-AUC (Test Partition) & \\textbf{0.4040} & \\texttt{[REAL DATA][MEASURED]} \\\\"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 310,
+      "text": "& \\textbf{Projected Quantum Kernel (PQK)} & \\textbf{PR-AUC (Matched $N=200$)} & \\textbf{0.5540} (ROC: 0.6753) & \\texttt{[REAL DATA][MEASURED]} \\\\"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 332,
+      "text": "In the matched experiment ($N=200$ escalated transactions), the Projected Quantum Kernel (PQK) achieved a point-estimate PR-AUC of \\textbf{0.5540}, outperforming the tuned classical RBF baseline (\\textbf{0.6561}) by $\\Delta = -0.1021$. However, rigorous paired bootstrap hypothesis testing (2,000 resamples) demonstrates that:"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Supplementary_Appendix.tex",
+      "line": 271,
+      "text": "$[0.30, 0.40)$ & 284 & 0.3472 & 0.3521 & \\textbf{0.0049} \\\\"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Supplementary_Appendix.tex",
+      "line": 272,
+      "text": "$[0.40, 0.50)$ & 186 & 0.4481 & 0.4355 & \\textbf{0.0126} \\\\"
+    },
+    {
+      "file": "proposal\\JUDGE_OBJECTIONS.md",
+      "line": 21,
+      "text": "2. **Sample Variance & Statistical Insignificance:** While PQK achieved a nominal PR-AUC of 0.5540 vs 0.6561 for Classical RBF ($\\Delta = -0.1021$), a 1,000-resample paired bootstrap test revealed a 95% confidence interval of $[-0.0383, +0.1821]$ with $p = 0.246$ (Bonferroni $p = 0.492$). The confidence interval encompasses zero, confirming that the observed delta is indistinguishable from sampling noise."
+    },
+    {
+      "file": "proposal\\JUDGE_OBJECTIONS.md",
+      "line": 61,
+      "text": "**Defense:** Our temporal audit evaluated forward out-of-sample slices spanning 42 days beyond the training horizon. LightGBM retained a strong ROC-AUC of 0.8503 and PR-AUC of 0.4040, but performance showed natural temporal decay from day 141 to day 183. Our Phase 2 architecture incorporates continuous calibration monitoring (tracking Expected Calibration Error and Brier score over rolling 7-day windows) and dynamic uncertainty threshold recalibration to trigger automated retraining when feature drift exceeds distribution bounds."
+    },
+    {
+      "file": "proposal\\PROPOSAL_CLAIM_MATRIX.md",
+      "line": 19,
+      "text": "| **CLM-04** | Frontline Classical Baseline | Calibrated LightGBM GBDT | `[REAL DATA] [MEASURED]` | `docs/evidence/real_classical_baseline.json` | PR-AUC = 0.4040, ROC-AUC = 0.8503 | \"Frontline calibrated LightGBM achieves a PR-AUC of 0.4040, delivering an 11.74x lift over out-of-sample test prevalence (0.0344).\" | \"Baseline is weak\" or \"LightGBM perfectly eliminates fraud\" |"
+    },
+    {
+      "file": "proposal\\PROPOSAL_CLAIM_MATRIX.md",
+      "line": 23,
+      "text": "| **CLM-08** | Matched Quantum vs Classical Experiment | Identical $N=200$ support, identical 2D features | `[REAL DATA] [MEASURED]` | `docs/evidence/real_quantum_matched_experiment.json` | PQK: 0.5540 vs RBF: 0.6561, MLP: 0.3516, GBM: 0.3529 | \"In a strictly matched N=200 escalated experiment, PQK achieved a nominal PR-AUC of 0.5540 versus 0.6561 for a tuned Classical RBF baseline.\" | \"PQK demonstrated empirical quantum dominance or decisive superiority\" |"
+    },
+    {
+      "file": "proposal\\PROPOSAL_NUMBER_LOCK.md",
+      "line": 25,
+      "text": "| **NL-09** | `0.4040` | Frontline LightGBM PR-AUC | `real_classical_baseline.json` | IEEE-CIS Fraud Benchmark | Test (118,108 tx) | `[REAL DATA] [MEASURED]` | \"PR-AUC of 0.4040 (11.74x lift over test prevalence)\" | \"World-leading 0.4040 accuracy\" |"
+    },
+    {
+      "file": "proposal\\PROPOSAL_NUMBER_LOCK.md",
+      "line": 39,
+      "text": "| **NL-23** | `0.5540` | Projected Quantum Kernel PR-AUC | `real_quantum_matched_experiment.json` | IEEE-CIS Escalated Support | Matched N=200 | `[REAL DATA] [MEASURED]` | \"nominal PR-AUC of 0.5540 for Projected Quantum Kernel\" | \"Unqualified claims of quantum victory or superiority\" |"
+    },
+    {
+      "file": "proposal\\PROPOSAL_RED_TEAM.md",
+      "line": 44,
+      "text": "- Primary metric is Precision-Recall AUC (PR-AUC = 0.4040, an 11.74x lift over test prevalence $\\pi = 0.0344$), avoiding ROC-AUC illusions."
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 15,
+      "text": "'0.40',"
+    },
+    {
+      "file": "scripts\\build_competition_package.py",
+      "line": 122,
+      "text": "- **PR-AUC:** **0.4040** (**11.74x lift** over random guessing $\\pi = 0.0344$)."
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 105,
+      "text": "This proposal establishes an empirically validated, asymmetric hybrid architecture for digital payment fraud detection. High-throughput retail payment environments process thousands of transactions per second under rigid operational latency constraints ($<50$~ms budget), where 99.5\\% of transactions are benign and fraud prevalence is below 3.5\\%. Indiscriminately executing quantum circuits across high-volume streams is operationally prohibitive ($180$--$1,200$~s cloud QPU queues; $\\$353,000 / 1\\text{M}$ tx modeled cost). Our architecture decouples online payment authorization from specialist evaluation: a fast, calibrated frontline LightGBM model processes 99.5\\% of transactions at \\textbf{4.07~ms median latency}, yielding a PR-AUC of \\textbf{0.4040} ($11.74\\times$ lift over the 3.499\\% prevalence base rate on the IEEE-CIS benchmark). A model posterior uncertainty router isolates the 0.5\\% boundary transactions, achieving a \\textbf{42.81\\% fraud density} ($12.44\\times$ concentration; $28.1\\times$ more fraud than transaction amount alone). On this matched boundary population ($N=200$), we conducted rigorous paired experiments comparing classical baselines against Quantum State Fidelity and Projected Quantum Kernels (PQK). PQK achieved a point-estimate PR-AUC of \\textbf{0.5540} vs \\textbf{0.6561} for classical RBF ($\\Delta = -0.1021$), but paired bootstrap hypothesis testing yields $p = 0.246$ (95\\% CI: $[-0.0383, +0.1821]$), failing to reject the null hypothesis. We transparently report this as \\textbf{Outcome B: No Quantum Advantage Demonstrated}. The primary enterprise deliverable is therefore a verified selective classical architecture operating at \\textbf{\\$0.65 / 1M transactions} that prevents multi-hundred-thousand-dollar cloud QPU misallocation while defining a falsifiable empirical gate for future quantum hardware adoption."
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 156,
+      "text": "node distance=0.40cm,"
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 180,
+      "text": "\\scriptsize PR-AUC: 0.4040 $\\cdot$ 3.29 ms"
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 236,
+      "text": "The frontline model is an optimized LightGBM classifier comprising 150 gradient-boosted trees trained with focal loss weighting to address the 1:28 class imbalance. Raw tree outputs are uncalibrated; we apply isotonic regression on the independent calibration partition. The calibrated model achieves an Expected Calibration Error (ECE) of \\textbf{0.0785} and a Brier score of \\textbf{0.0250}, ensuring that output score $p$ reflects true empirical posterior probability $P(Y=1 \\mid X)$. On the unseen test partition, this frontline detector achieves a PR-AUC of \\textbf{0.4040} ($11.74\\times$ lift over the test base prevalence of $\\pi = 0.0344$) and an ROC-AUC of \\textbf{0.8503}."
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 314,
+      "text": "\\textbf{Frontline Detector} & LightGBM (150 trees, focal loss) & PR-AUC (Test Partition) & \\textbf{0.4040} & \\texttt{[REAL DATA][MEASURED]} \\\\"
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 329,
+      "text": "& \\textbf{Projected Quantum Kernel (PQK)} & \\textbf{PR-AUC (Matched $N=200$)} & \\textbf{0.5540} (ROC: 0.6753) & \\texttt{[REAL DATA][MEASURED]} \\\\"
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 351,
+      "text": "In the matched experiment ($N=200$ escalated transactions), the Projected Quantum Kernel (PQK) achieved a point-estimate PR-AUC of \\textbf{0.5540}, outperforming the tuned classical RBF baseline (\\textbf{0.6561}) by $\\Delta = -0.1021$. However, rigorous paired bootstrap hypothesis testing (2,000 resamples) demonstrates that:"
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 727,
+      "text": "$[0.30, 0.40)$ & 284 & 0.3472 & 0.3521 & \\textbf{0.0049} \\\\"
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 728,
+      "text": "$[0.40, 0.50)$ & 186 & 0.4481 & 0.4355 & \\textbf{0.0126} \\\\"
+    },
+    {
+      "file": "scripts\\build_proposal.py",
+      "line": 316,
+      "text": "Frontline gradient boosted decision trees (LightGBM) achieve strong baseline discrimination (PR-AUC 0.4040, ROC-AUC 0.8503) and sub-5 ms execution across routine transactions. However, transactions close to the classification boundary exhibit epistemic uncertainty: instances where the frontline scorer lacks decisive confidence. Instead of attempting to replace the fast classical detector with a slow, costly quantum system, the rational architecture isolates this small, ambiguous subset for targeted secondary evaluation. This keeps 99% of transactions on an autonomous fast path while focusing specialist computation strictly where decision ambiguity is highest."
+    },
+    {
+      "file": "scripts\\build_proposal.py",
+      "line": 519,
+      "text": "<td><strong>0.4040</strong> (11.7x lift)</td>"
+    },
+    {
+      "file": "scripts\\build_proposal.py",
+      "line": 589,
+      "text": "<td><strong>0.5540</strong></td>"
+    },
+    {
+      "file": "scripts\\build_proposal.py",
+      "line": 609,
+      "text": "In the matched N=200 escalated experiment, Projected Quantum Kernel achieved a nominal PR-AUC of 0.5540 versus 0.6561 for the Classical RBF baseline (&Delta;PR-AUC = -0.1021). To establish whether this point estimate represents genuine advantage or finite-sample variance, we conducted a <strong>1,000-resample paired bootstrap hypothesis test</strong>. The resulting 95% confidence interval spans zero: <strong>[&minus;0.0383, +0.1821]</strong>, with a two-tailed p-value of <strong>p = 0.246</strong> (Bonferroni-adjusted p = 0.492). Because the confidence interval includes negative values and p &gt; 0.05, <strong>the null hypothesis of no quantum advantage cannot be rejected</strong>."
+    },
+    {
+      "file": "src\\dashboard\\app.py",
+      "line": 247,
+      "text": "{\"Specialist Architecture\": \"Projected Quantum Kernel (PQK)\", \"PR-AUC (Escalated)\": \"0.5540\", \"ROC-AUC\": \"0.6753\", \"Inference Latency\": \"159.14 ms\", \"Compute Cost / 10k\": \"$353,000.00 (QPU)\"}"
+    },
+    {
+      "file": "src\\evaluation\\threshold_and_calibration_audit.py",
+      "line": 78,
+      "text": "thresholds = [0.01, 0.02, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.60, 0.70, 0.80, 0.90]"
+    }
+  ],
+  "0.60": [
+    {
+      "file": "docs\\research_status.md",
+      "line": 71,
+      "text": "*   $N=400$: $79,800$ circuits ($0.60$s simulation)."
+    },
+    {
+      "file": "docs\\evidence\\calibration_audit.json",
+      "line": 44,
+      "text": "\"bin_range\": \"[0.50, 0.60]\","
+    },
+    {
+      "file": "docs\\evidence\\calibration_audit.json",
+      "line": 51,
+      "text": "\"bin_range\": \"[0.60, 0.70]\","
+    },
+    {
+      "file": "docs\\evidence\\CALIBRATION_AUDIT.md",
+      "line": 32,
+      "text": "| **$[0.50, 0.60)$** | 38 | 50.25% | 44.74% | **0.0551** |"
+    },
+    {
+      "file": "docs\\evidence\\CALIBRATION_AUDIT.md",
+      "line": 33,
+      "text": "| **$[0.60, 0.70)$** | 70 | 64.59% | 62.86% | **0.0173** |"
+    },
+    {
+      "file": "docs\\evidence\\DECISION_THRESHOLD_AUDIT.md",
+      "line": 34,
+      "text": "| **0.60** | 70 | 3.5% | 7.1% | 62.9% | 98.1% | 0.128 | 9.3 hrs | $103,890 |"
+    },
+    {
+      "file": "docs\\evidence\\real_latency_audit.json",
+      "line": 47,
+      "text": "\"max_ms\": 0.6072,"
+    },
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 50,
+      "text": "| **18** | **Router Uncertainty Interval** | $0.40 \\le p \\le 0.60$ | **Budget Percentile Router** ($B=10\\%$) | `src/models/router/escalation_router.py` | `data/results/router_audit.json` | `3aeb09c8cdd36711...` | `[IMPLEMENTED] [VERIFIED]` |"
+    },
+    {
+      "file": "docs\\evidence\\router_audit.json",
+      "line": 146,
+      "text": "\"ks_statistic\": 0.6084564131038313,"
+    },
+    {
+      "file": "docs\\evidence\\router_causality_ablation.json",
+      "line": 344,
+      "text": "\"system_precision\": 0.6071428571428571,"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 25,
+      "text": "8. `0.40` / `0.60` (Router uncertainty bounds check)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 46,
+      "text": "| **`0.40` / `0.60`** | 24 | **VALID** | Legitimate raw floating point values in `data/raw/train_transaction.csv` ($Amt) and threshold bounds for $B=10\\%$ uncertainty escalation in router audit. | **Retained as valid**. Retained as floating-point feature values and router margin bounds. |"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Supplementary_Appendix.tex",
+      "line": 273,
+      "text": "$[0.50, 0.60)$ & 98 & 0.5429 & 0.5510 & \\textbf{0.0081} \\\\"
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Supplementary_Appendix.tex",
+      "line": 274,
+      "text": "$[0.60, 0.70)$ & 62 & 0.6480 & 0.6613 & \\textbf{0.0133} \\\\"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Supplementary_Appendix.tex",
+      "line": 273,
+      "text": "$[0.50, 0.60)$ & 98 & 0.5429 & 0.5510 & \\textbf{0.0081} \\\\"
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Supplementary_Appendix.tex",
+      "line": 274,
+      "text": "$[0.60, 0.70)$ & 62 & 0.6480 & 0.6613 & \\textbf{0.0133} \\\\"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 16,
+      "text": "'0.60',"
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 729,
+      "text": "$[0.50, 0.60)$ & 98 & 0.5429 & 0.5510 & \\textbf{0.0081} \\\\"
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 730,
+      "text": "$[0.60, 0.70)$ & 62 & 0.6480 & 0.6613 & \\textbf{0.0133} \\\\"
+    },
+    {
+      "file": "src\\evaluation\\threshold_and_calibration_audit.py",
+      "line": 78,
+      "text": "thresholds = [0.01, 0.02, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.60, 0.70, 0.80, 0.90]"
+    }
+  ],
+  "185 ms hardware": [
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 26,
+      "text": "9. `185 ms hardware` / `185ms hardware` / `hardware 185` (Conflating simulator latency with hardware execution)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 47,
+      "text": "| **`185 ms hardware`** | 0 | **INVALID** | Conflation of classical CPU statevector simulator execution time with physical QPU hardware latency. | **Zero occurrences found in codebase**. Confirmed labeled as **CPU Simulator Latency Only**. QPU execution acknowledged as violating payment authorization SLAs ($100-300\\text{ms}$). |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 17,
+      "text": "'185 ms hardware',"
+    }
+  ],
+  "185ms hardware": [
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 26,
+      "text": "9. `185 ms hardware` / `185ms hardware` / `hardware 185` (Conflating simulator latency with hardware execution)"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 18,
+      "text": "'185ms hardware',"
+    }
+  ],
+  "hardware 185": [
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 26,
+      "text": "9. `185 ms hardware` / `185ms hardware` / `hardware 185` (Conflating simulator latency with hardware execution)"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 19,
+      "text": "'hardware 185',"
+    }
+  ],
+  "quantum advantage demonstrated": [
+    {
+      "file": "README.md",
+      "line": 5,
+      "text": "**Master Status:** `[REAL DATA]` `[MEASURED]` `[VERIFIED]` `[NO QUANTUM ADVANTAGE DEMONSTRATED]`"
+    },
+    {
+      "file": "README.md",
+      "line": 6,
+      "text": "**Final Scientific Verdict:** `OUTCOME B \u2014 NO QUANTUM ADVANTAGE DEMONSTRATED, BUT USEFUL SELECTIVE CLASSICAL ARCHITECTURE VALIDATED`"
+    },
+    {
+      "file": "docs\\evidence\\ADVERSARIAL_STRESS_TEST.md",
+      "line": 111,
+      "text": "3. **Firm Quantum Invariance:** Stressing the synthetic distributions across 8 dimensions confirms the core scientific verdict: **no quantum advantage demonstrated**."
+    },
+    {
+      "file": "docs\\evidence\\CANONICAL_RESULTS.md",
+      "line": 5,
+      "text": "**Master Status:** `[REAL DATA]` `[MEASURED]` `[VERIFIED]` `[NO QUANTUM ADVANTAGE DEMONSTRATED]`"
+    },
+    {
+      "file": "docs\\evidence\\CANONICAL_RESULTS.md",
+      "line": 6,
+      "text": "**Final Scientific Verdict:** `OUTCOME B \u2014 NO QUANTUM ADVANTAGE DEMONSTRATED, BUT USEFUL SELECTIVE CLASSICAL ARCHITECTURE VALIDATED`"
+    },
+    {
+      "file": "docs\\evidence\\CANONICAL_RESULTS.md",
+      "line": 53,
+      "text": "| **`CLM-QNTM-01`** | Real Quantum vs Classical RBF Delta | `[REAL DATA] [MEASURED]` | Official IEEE-CIS | [`real_quantum_matched_experiment.json`](docs/evidence/real_quantum_matched_experiment.json) | `src/evaluation/run_real_scientific_suite.py` | 42 | $\\Delta\\text{PR-AUC}$ (PQK - RBF) | **-0.1021** | $95\\%\\text{ CI: } [-0.0383, +0.1821]$, $p = 0.246$ | Bonferroni $p = 0.492$; no statistically significant quantum advantage demonstrated. |"
+    },
+    {
+      "file": "docs\\evidence\\CANONICAL_RESULTS.md",
+      "line": 63,
+      "text": "| **`CLM-VERDICT-01`** | Master Scientific Verdict | `[VERIFIED]` | Master Experimental Evidence | [`RESEARCH_VERDICT.md`](docs/evidence/RESEARCH_VERDICT.md) | Multi-Phase Synthesis | N/A | Scientific Verdict | **OUTCOME B** | Definitive Scientific Choice | No quantum advantage demonstrated; selective classical architecture strongly validated. |"
+    },
+    {
+      "file": "docs\\evidence\\COMPETITION_STORY.md",
+      "line": 3,
+      "text": "**Master Status:** `[REAL DATA]` `[MEASURED]` `[VERIFIED]` `[NO QUANTUM ADVANTAGE DEMONSTRATED]`"
+    },
+    {
+      "file": "docs\\evidence\\COMPETITION_STORY.md",
+      "line": 4,
+      "text": "**Scientific Verdict:** `OUTCOME B \u2014 NO QUANTUM ADVANTAGE DEMONSTRATED, BUT USEFUL SELECTIVE CLASSICAL ARCHITECTURE VALIDATED`"
+    },
+    {
+      "file": "docs\\evidence\\FINAL_CLAIM_GATE.md",
+      "line": 20,
+      "text": "4. **No Quantum Advantage Demonstrated:**"
+    },
+    {
+      "file": "docs\\evidence\\FINAL_CLAIM_GATE.md",
+      "line": 54,
+      "text": "1. \u274c **Assertions of Positive Quantum Advantage** (Falsified: $95\\%\\text{ CI}$ spans zero, $p = 0.246 > 0.05$; no quantum advantage demonstrated)."
+    },
+    {
+      "file": "docs\\evidence\\FINAL_READINESS_REPORT.md",
+      "line": 5,
+      "text": "**Master Evidence Status:** `[REAL DATA]` `[MEASURED]` `[VERIFIED]` `[NO QUANTUM ADVANTAGE DEMONSTRATED]` `[HARDWARE NOT JUSTIFIED]`"
+    },
+    {
+      "file": "docs\\evidence\\FINAL_READINESS_REPORT.md",
+      "line": 6,
+      "text": "**Master Scientific Verdict:** `OUTCOME B \u2014 NO QUANTUM ADVANTAGE DEMONSTRATED, BUT USEFUL SELECTIVE CLASSICAL ARCHITECTURE VALIDATED`"
+    },
+    {
+      "file": "docs\\evidence\\FINAL_READINESS_REPORT.md",
+      "line": 97,
+      "text": "* **Statistical Conclusion:** Because the 95% CI spans zero and $p > 0.05$, the null hypothesis cannot be rejected. **No statistically significant quantum advantage demonstrated.**"
+    },
+    {
+      "file": "docs\\evidence\\FINAL_READINESS_REPORT.md",
+      "line": 170,
+      "text": "### OUTCOME B \u2014 NO QUANTUM ADVANTAGE DEMONSTRATED, BUT USEFUL SELECTIVE CLASSICAL ARCHITECTURE VALIDATED"
+    },
+    {
+      "file": "docs\\evidence\\FINAL_READINESS_REPORT.md",
+      "line": 194,
+      "text": "| \u274c Claims of Unqualified Quantum Advantage | Falsified: 95% CI spans zero ($[-0.0383, +0.1821]$), $p = 0.246 > 0.05$; no quantum advantage demonstrated. |"
+    },
+    {
+      "file": "docs\\evidence\\real_quantum_matched_experiment.json",
+      "line": 48,
+      "text": "\"scientific_conclusion\": \"No statistically significant quantum advantage demonstrated over fair Classical RBF control on real IEEE-CIS escalated transactions.\""
+    },
+    {
+      "file": "docs\\evidence\\RESEARCH_VERDICT.md",
+      "line": 1,
+      "text": "# Master Research Verdict: OUTCOME B \u2014 NO QUANTUM ADVANTAGE DEMONSTRATED"
+    },
+    {
+      "file": "docs\\evidence\\RESEARCH_VERDICT.md",
+      "line": 6,
+      "text": "**Scientific Verdict:** `OUTCOME B \u2014 NO QUANTUM ADVANTAGE DEMONSTRATED, BUT USEFUL SELECTIVE CLASSICAL ARCHITECTURE VALIDATED`"
+    },
+    {
+      "file": "docs\\evidence\\RESEARCH_VERDICT.md",
+      "line": 7,
+      "text": "**Evidence Status:** `[REAL DATA]` `[MEASURED]` `[VERIFIED]` `[NO QUANTUM ADVANTAGE DEMONSTRATED]` `[HARDWARE NOT JUSTIFIED]`"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 48,
+      "text": "| **Unqualified Advantage Claims** | 0 | **INVALID** | Marketing superlative directly violating scientific reality. | **Zero occurrences found**. Forbidden by Claim Firewall. Master verdict remains: **Outcome B \u2014 No Quantum Advantage Demonstrated**. |"
+    },
+    {
+      "file": "docs\\evidence\\competition_package\\17_final_verdict.md",
+      "line": 16,
+      "text": "# OUTCOME B \u2014 NO QUANTUM ADVANTAGE DEMONSTRATED, BUT USEFUL SELECTIVE CLASSICAL ARCHITECTURE VALIDATED"
+    },
+    {
+      "file": "docs\\evidence\\competition_package\\17_final_verdict.md",
+      "line": 19,
+      "text": "2. **No Quantum Advantage Demonstrated on Tabular Payment Data:** Quantum kernels showed no statistically significant outperformance over fair classical controls ($p = 0.246$)."
+    },
+    {
+      "file": "docs\\proposal\\FINAL_PROPOSAL_READINESS_REPORT.md",
+      "line": 14,
+      "text": "The submission strictly enforces **OUTCOME B: NO QUANTUM ADVANTAGE DEMONSTRATED, BUT USEFUL SELECTIVE CLASSICAL ARCHITECTURE VALIDATED**. Every quantitative claim is frozen against canonical empirical ledgers, adhering to strict evidence classification (`[REAL DATA]`, `[MEASURED]`, `[VERIFIED]`, `[MODELED]`, `[ASSUMED]`)."
+    },
+    {
+      "file": "docs\\proposal\\FINAL_PROPOSAL_READINESS_REPORT.md",
+      "line": 113,
+      "text": "- *\"quantum advantage demonstrated\"* $\\to$ 0 instances (explicitly states advantage was not demonstrated)."
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 86,
+      "text": "This proposal establishes an empirically validated, asymmetric hybrid architecture for digital payment fraud detection. High-throughput retail payment environments process thousands of transactions per second under rigid operational latency constraints ($<50$~ms budget), where 99.5\\% of transactions are benign and fraud prevalence is below 3.5\\%. Indiscriminately executing quantum circuits across high-volume streams is operationally prohibitive ($180$--$1,200$~s cloud QPU queues; $\\$353,000 / 1\\text{M}$ tx modeled cost). Our architecture decouples online payment authorization from specialist evaluation: a fast, calibrated frontline LightGBM model processes 99.5\\% of transactions at \\textbf{4.07~ms median latency}, yielding a PR-AUC of \\textbf{0.4040} ($11.74\\times$ lift over the 3.499\\% prevalence base rate on the IEEE-CIS benchmark). A model posterior uncertainty router isolates the 0.5\\% boundary transactions, achieving a \\textbf{42.81\\% fraud density} ($12.44\\times$ concentration; $28.1\\times$ more fraud than transaction amount alone). On this matched boundary population ($N=200$), we conducted rigorous paired experiments comparing classical baselines against Quantum State Fidelity and Projected Quantum Kernels (PQK). PQK achieved a point-estimate PR-AUC of \\textbf{0.5540} vs \\textbf{0.6561} for classical RBF ($\\Delta = -0.1021$), but paired bootstrap hypothesis testing yields $p = 0.246$ (95\\% CI: $[-0.0383, +0.1821]$), failing to reject the null hypothesis. We transparently report this as \\textbf{Outcome B: No Quantum Advantage Demonstrated}. The primary enterprise deliverable is therefore a verified selective classical architecture operating at \\textbf{\\$0.65 / 1M transactions} that prevents multi-hundred-thousand-dollar cloud QPU misallocation while defining a falsifiable empirical gate for future quantum hardware adoption."
+    },
+    {
+      "file": "docs\\proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 338,
+      "text": "\\textbf{Scientific Verdict:} We report this unambiguously as \\textbf{Outcome B: No Quantum Advantage Demonstrated}. Under current feature representations, quantum kernels do not demonstrate statistically significant superiority over tuned classical non-linear methods."
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_CLAIM_MATRIX.md",
+      "line": 32,
+      "text": "| **CLM-17** | Master Scientific Verdict | Comprehensive multi-phase empirical synthesis | `[VERIFIED]` | `docs/evidence/RESEARCH_VERDICT.md` | Outcome B | \"Outcome B: No quantum advantage demonstrated under rigorous matched controls, but a highly effective selective classical architecture was validated.\" | \"Outcome A: Conclusive quantum advantage achieved\" |"
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_NUMBER_LOCK.md",
+      "line": 54,
+      "text": "| **NL-38** | `Outcome B` | Master Scientific Verdict | `RESEARCH_VERDICT.md` | Complete Evidence Suite | Multi-phase synthesis | `[VERIFIED]` | \"Outcome B: No quantum advantage demonstrated, but useful selective classical architecture validated\" | \"Outcome A: Quantum advantage demonstrated\" |"
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_RED_TEAM.md",
+      "line": 72,
+      "text": "- Explicit quantum verdict: **Outcome B (No quantum advantage demonstrated)**."
+    },
+    {
+      "file": "docs\\proposal\\PROPOSAL_RED_TEAM.md",
+      "line": 86,
+      "text": "| 4. Unsupported quantum advantage | None | Proposal explicitly states no quantum advantage demonstrated (p = 0.246). |"
+    },
+    {
+      "file": "proposal\\FINAL_PROPOSAL_READINESS_REPORT.md",
+      "line": 14,
+      "text": "The submission strictly enforces **OUTCOME B: NO QUANTUM ADVANTAGE DEMONSTRATED, BUT USEFUL SELECTIVE CLASSICAL ARCHITECTURE VALIDATED**. Every quantitative claim is frozen against canonical empirical ledgers, adhering to strict evidence classification (`[REAL DATA]`, `[MEASURED]`, `[VERIFIED]`, `[MODELED]`, `[ASSUMED]`)."
+    },
+    {
+      "file": "proposal\\FINAL_PROPOSAL_READINESS_REPORT.md",
+      "line": 113,
+      "text": "- *\"quantum advantage demonstrated\"* $\\to$ 0 instances (explicitly states advantage was not demonstrated)."
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 86,
+      "text": "This proposal establishes an empirically validated, asymmetric hybrid architecture for digital payment fraud detection. High-throughput retail payment environments process thousands of transactions per second under rigid operational latency constraints ($<50$~ms budget), where 99.5\\% of transactions are benign and fraud prevalence is below 3.5\\%. Indiscriminately executing quantum circuits across high-volume streams is operationally prohibitive ($180$--$1,200$~s cloud QPU queues; $\\$353,000 / 1\\text{M}$ tx modeled cost). Our architecture decouples online payment authorization from specialist evaluation: a fast, calibrated frontline LightGBM model processes 99.5\\% of transactions at \\textbf{4.07~ms median latency}, yielding a PR-AUC of \\textbf{0.4040} ($11.74\\times$ lift over the 3.499\\% prevalence base rate on the IEEE-CIS benchmark). A model posterior uncertainty router isolates the 0.5\\% boundary transactions, achieving a \\textbf{42.81\\% fraud density} ($12.44\\times$ concentration; $28.1\\times$ more fraud than transaction amount alone). On this matched boundary population ($N=200$), we conducted rigorous paired experiments comparing classical baselines against Quantum State Fidelity and Projected Quantum Kernels (PQK). PQK achieved a point-estimate PR-AUC of \\textbf{0.5540} vs \\textbf{0.6561} for classical RBF ($\\Delta = -0.1021$), but paired bootstrap hypothesis testing yields $p = 0.246$ (95\\% CI: $[-0.0383, +0.1821]$), failing to reject the null hypothesis. We transparently report this as \\textbf{Outcome B: No Quantum Advantage Demonstrated}. The primary enterprise deliverable is therefore a verified selective classical architecture operating at \\textbf{\\$0.65 / 1M transactions} that prevents multi-hundred-thousand-dollar cloud QPU misallocation while defining a falsifiable empirical gate for future quantum hardware adoption."
+    },
+    {
+      "file": "proposal\\HSBC_Phase1_Concept_Proposal.tex",
+      "line": 338,
+      "text": "\\textbf{Scientific Verdict:} We report this unambiguously as \\textbf{Outcome B: No Quantum Advantage Demonstrated}. Under current feature representations, quantum kernels do not demonstrate statistically significant superiority over tuned classical non-linear methods."
+    },
+    {
+      "file": "proposal\\PROPOSAL_CLAIM_MATRIX.md",
+      "line": 32,
+      "text": "| **CLM-17** | Master Scientific Verdict | Comprehensive multi-phase empirical synthesis | `[VERIFIED]` | `docs/evidence/RESEARCH_VERDICT.md` | Outcome B | \"Outcome B: No quantum advantage demonstrated under rigorous matched controls, but a highly effective selective classical architecture was validated.\" | \"Outcome A: Conclusive quantum advantage achieved\" |"
+    },
+    {
+      "file": "proposal\\PROPOSAL_NUMBER_LOCK.md",
+      "line": 54,
+      "text": "| **NL-38** | `Outcome B` | Master Scientific Verdict | `RESEARCH_VERDICT.md` | Complete Evidence Suite | Multi-phase synthesis | `[VERIFIED]` | \"Outcome B: No quantum advantage demonstrated, but useful selective classical architecture validated\" | \"Outcome A: Quantum advantage demonstrated\" |"
+    },
+    {
+      "file": "proposal\\PROPOSAL_RED_TEAM.md",
+      "line": 72,
+      "text": "- Explicit quantum verdict: **Outcome B (No quantum advantage demonstrated)**."
+    },
+    {
+      "file": "proposal\\PROPOSAL_RED_TEAM.md",
+      "line": 86,
+      "text": "| 4. Unsupported quantum advantage | None | Proposal explicitly states no quantum advantage demonstrated (p = 0.246). |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 20,
+      "text": "'quantum advantage demonstrated',"
+    },
+    {
+      "file": "scripts\\build_competition_package.py",
+      "line": 325,
+      "text": "# OUTCOME B \u2014 NO QUANTUM ADVANTAGE DEMONSTRATED, BUT USEFUL SELECTIVE CLASSICAL ARCHITECTURE VALIDATED"
+    },
+    {
+      "file": "scripts\\build_competition_package.py",
+      "line": 328,
+      "text": "2. **No Quantum Advantage Demonstrated on Tabular Payment Data:** Quantum kernels showed no statistically significant outperformance over fair classical controls ($p = 0.246$)."
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 105,
+      "text": "This proposal establishes an empirically validated, asymmetric hybrid architecture for digital payment fraud detection. High-throughput retail payment environments process thousands of transactions per second under rigid operational latency constraints ($<50$~ms budget), where 99.5\\% of transactions are benign and fraud prevalence is below 3.5\\%. Indiscriminately executing quantum circuits across high-volume streams is operationally prohibitive ($180$--$1,200$~s cloud QPU queues; $\\$353,000 / 1\\text{M}$ tx modeled cost). Our architecture decouples online payment authorization from specialist evaluation: a fast, calibrated frontline LightGBM model processes 99.5\\% of transactions at \\textbf{4.07~ms median latency}, yielding a PR-AUC of \\textbf{0.4040} ($11.74\\times$ lift over the 3.499\\% prevalence base rate on the IEEE-CIS benchmark). A model posterior uncertainty router isolates the 0.5\\% boundary transactions, achieving a \\textbf{42.81\\% fraud density} ($12.44\\times$ concentration; $28.1\\times$ more fraud than transaction amount alone). On this matched boundary population ($N=200$), we conducted rigorous paired experiments comparing classical baselines against Quantum State Fidelity and Projected Quantum Kernels (PQK). PQK achieved a point-estimate PR-AUC of \\textbf{0.5540} vs \\textbf{0.6561} for classical RBF ($\\Delta = -0.1021$), but paired bootstrap hypothesis testing yields $p = 0.246$ (95\\% CI: $[-0.0383, +0.1821]$), failing to reject the null hypothesis. We transparently report this as \\textbf{Outcome B: No Quantum Advantage Demonstrated}. The primary enterprise deliverable is therefore a verified selective classical architecture operating at \\textbf{\\$0.65 / 1M transactions} that prevents multi-hundred-thousand-dollar cloud QPU misallocation while defining a falsifiable empirical gate for future quantum hardware adoption."
+    },
+    {
+      "file": "scripts\\build_latex_proposal.py",
+      "line": 357,
+      "text": "\\textbf{Scientific Verdict:} We report this unambiguously as \\textbf{Outcome B: No Quantum Advantage Demonstrated}. Under current feature representations, quantum kernels do not demonstrate statistically significant superiority over tuned classical non-linear methods."
+    },
+    {
+      "file": "src\\dashboard\\app.py",
+      "line": 308,
+      "text": "FINAL SCIENTIFIC OUTCOME: OUTCOME B \u2014 NO QUANTUM ADVANTAGE DEMONSTRATED"
+    },
+    {
+      "file": "src\\evaluation\\run_real_scientific_suite.py",
+      "line": 369,
+      "text": "\"scientific_conclusion\": \"No statistically significant quantum advantage demonstrated over fair Classical RBF control on real IEEE-CIS escalated transactions.\""
+    }
+  ],
+  "causal driver": [
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 28,
+      "text": "11. `causal driver` (Unjustified causal inference without randomized control)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 49,
+      "text": "| **`causal driver`** | 1 | **INVALID INFERENCE** | Found in `src/evaluation/routing_causality_ablation.py` docstring. | **Downgraded**. Replaced with *\"mechanistic enrichment drivers of selective escalation\"*. |"
+    },
+    {
+      "file": "scripts\\audit_claim_firewall.py",
+      "line": 23,
+      "text": "r\"transaction amount is the dominant causal driver\","
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 21,
+      "text": "'causal driver',"
+    }
+  ],
+  "dimension collapse": [
+    {
+      "file": "docs\\evidence\\RECONCILIATION_REPORT.md",
+      "line": 100,
+      "text": "| *\"Hilbert space dimension explosion causes kernel collapse.\"* | **\"Centered Kernel Alignment (CKA = 0.9429) confirms high geometric overlap with classical RBF kernels rather than dimension collapse.\"** | CKA measurements prove the quantum kernel geometrically emulates classical RBF, rather than undergoing dimension explosion. |"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 29,
+      "text": "12. `dimension collapse` (Unproven geometric mechanism)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 50,
+      "text": "| **`dimension collapse`** | 1 | **INVALID INFERENCE** | Addressed in `RECONCILIATION_REPORT.md` as an unsupported narrative mechanism. | **Purged**. Replaced with verified Centered Kernel Alignment (CKA = 0.9429) metric. |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 22,
+      "text": "'dimension collapse',"
+    }
+  ],
+  "100% reproducible": [
+    {
+      "file": "scripts\\audit_claim_firewall.py",
+      "line": 25,
+      "text": "r\"100% reproducible\","
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 23,
+      "text": "'100% reproducible',"
+    }
+  ],
+  "verified secure": [
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 31,
+      "text": "14. `verified secure` (Unscoped security superlative claim)"
+    },
+    {
+      "file": "docs\\evidence\\STALE_CLAIM_AUDIT.md",
+      "line": 52,
+      "text": "| **`verified secure`** | 0 | **INVALID SUPERLATIVE** | Unscoped security superlative pattern in Claim Firewall ban list. | **Zero occurrences found**. Security status framed strictly as static analysis within tested scope ($0$ P0/P1 findings). |"
+    },
+    {
+      "file": "scripts\\audit_stale_claims.py",
+      "line": 24,
+      "text": "'verified secure'"
+    }
+  ]
+}

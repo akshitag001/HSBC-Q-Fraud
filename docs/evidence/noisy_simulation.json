@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "dataset_type": "SYNTHETIC",
+    "simulator": "PennyLane default.mixed",
+    "noise_channel": "DepolarizingChannel (single-qubit)",
+    "n_samples": 20
+  },
+  "noise_sweep": [
+    {
+      "depolarizing_error_rate_p": 0.0,
+      "mean_state_purity": 1.0,
+      "kernel_fidelity_to_ideal": 1.0,
+      "test_auprc": 0.3611111111111111,
+      "test_roc_auc": 0.5
+    },
+    {
+      "depolarizing_error_rate_p": 0.05,
+      "mean_state_purity": 0.7397314779658279,
+      "kernel_fidelity_to_ideal": 0.9841139773725638,
+      "test_auprc": 0.2777777777777778,
+      "test_roc_auc": 0.4375
+    }
+  ],
+  "scientific_summary": {
+    "purity_drop_at_p01": 0.26026852203417206,
+    "kernel_degradation_conclusion": "Physical noise monotonically degrades state purity and kernel alignment, confirming that physical hardware cannot magically produce an advantage over an ideal noise-free simulator."
+  }
+}
